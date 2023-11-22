@@ -1,19 +1,18 @@
 {
   "extends": [
     "eslint:recommended",
-    "plugin: import/errors",
-    "plugin: react/recommended",
-    "plugin : jsx-a11y/recommended",
-    "plugin : react-hooks/recommended",
+    "plugin:import/errors",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
     "prettier"
   ],
   "rules": {
     "react/prop-types": 0,
     "react/react-in-jsx-scope": 0
   },
-  "plugins": ["react", "improt", "jsx-a11y", "react-hooks"],
+  "plugins": ["react", "import", "jsx-a11y", "react-hooks"],
   "parserOptions": {
-    "ecmaVerstion": 2022,
+    "ecmaVersion": 2022,
     "sourceType": "module",
     "ecmaFeatures": {
       "jsx": true
@@ -24,13 +23,13 @@
     "browser": true,
     "node": true
   },
-  "setttings": {
+  "settings": {
     "react": {
       "version": "detect"
     },
-    "impot/resorver": {
+    "import/resolver": {
       "node": {
-        "extentions": [".js", ".jsx"]
+        "extensions": [".js", ".jsx"]
       }
     }
   }
